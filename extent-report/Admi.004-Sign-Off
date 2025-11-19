@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Message xmlns="urn:tch" xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.01" xmlns:rf="urn:iso:std:iso:20022:tech:xsd:admn.004.001.01">
+<Message xmlns="urn:tch"
+         xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.01"
+         xmlns:re="urn:iso:std:iso:20022:tech:xsd:admn.006.001.01">
 <AppHdr>
 <head:Fr>
 <head:FIId>
@@ -8,9 +10,6 @@
 <head:MmbId>021150706P1</head:MmbId>
 </head:ClrSysMmbId>
 </head:FinInstnId>
-<head:BrnchId>
-<head:Id>021150706P1</head:Id>
-</head:BrnchId>
 </head:FIId>
 </head:Fr>
 <head:To>
@@ -20,14 +19,11 @@
 <head:MmbId>021040079P1</head:MmbId>
 </head:ClrSysMmbId>
 </head:FinInstnId>
-<head:BrnchId>
-<head:Id>021150078P1</head:Id>
-</head:BrnchId>
 </head:FIId>
 </head:To>
-<head:BizMsgIdr>B20251118021150706P1H70600000010628</head:BizMsgIdr>
-<head:MsgDefIdr>admn.004.001.01</head:MsgDefIdr>
-<head:CreDt>2025-11-18T06:08:21-05:00</head:CreDt>
+<head:BizMsgIdr>B20251118021150706P1H70600000010859</head:BizMsgIdr>
+<head:MsgDefIdr>admn.006.001.01</head:MsgDefIdr>
+<head:CreDt>2025-11-18T07:03:17-05:00</head:CreDt>
 <head:Sgntr>
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
 <SignedInfo>
@@ -55,30 +51,31 @@
 </Signature>
 </head:Sgntr>
 </AppHdr>
-<SignOffResponse>
-<rf:AdmnSignOffResp>
-<rf:GrpHdr>
-<rf:MsgId>20251118110821021150706P10000001062</rf:MsgId>
-<rf:CreDtTm>2025-11-18T06:08:21-05:00</rf:CreDtTm>
-</rf:GrpHdr>
-<rf:SignOffResp>
-<rf:OrgnlInstrId>20251118021040079P1B07900000011289</rf:OrgnlInstrId>
-<rf:InstgAgt>
-<rf:FinInstnId>
-<rf:ClrSysMmbId>
-<rf:MmbId>021150706P1</rf:MmbId>
-</rf:ClrSysMmbId>
-</rf:FinInstnId>
-</rf:InstgAgt>
-<rf:InstdAgt>
-<rf:FinInstnId>
-<rf:ClrSysMmbId>
-<rf:MmbId>021040079P1</rf:MmbId>
-</rf:ClrSysMmbId>
-</rf:FinInstnId>
-</rf:InstdAgt>
-<rf:Sts>ACTC</rf:Sts>
-</rf:SignOffResp>
-</rf:AdmnSignOffResp>
-</SignOffResponse>
+<EchoResponse>
+<re:AdmnEchoResp>
+<re:GrpHdr>
+<re:MsgId>20251118120317021150706P10000001085</re:MsgId>
+<re:CreDtTm>2025-11-18T07:03:17-05:00</re:CreDtTm>
+</re:GrpHdr>
+<re:EchoResponse>
+<re:InstgAgt>
+<re:FinInstnId>
+<re:ClrSysMmbId>
+<re:MmbId>021150706P1</re:MmbId>
+</re:ClrSysMmbId>
+</re:FinInstnId>
+</re:InstgAgt>
+<re:InstdAgt>
+<re:FinInstnId>
+<re:ClrSysMmbId>
+<re:MmbId>021040079P1</re:MmbId>
+</re:ClrSysMmbId>
+</re:FinInstnId>
+</re:InstdAgt>
+<re:OrgnlInstrId>20251118021040079P1B07900000011511</re:OrgnlInstrId>
+<re:FnctnCd>731</re:FnctnCd>
+<re:TxSts>ACTC</re:TxSts>
+</re:EchoResponse>
+</re:AdmnEchoResp>
+</EchoResponse>
 </Message>
